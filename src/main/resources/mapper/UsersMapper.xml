@@ -122,7 +122,7 @@
       #{num,jdbcType=INTEGER}, #{balance,jdbcType=INTEGER}, #{gmtCreate,jdbcType=TIMESTAMP}, 
       #{gmtModified,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.library.mana.domain.Users">
+  <insert id="insertSelective" parameterType="com.library.mana.domain.Users" useGeneratedKeys="true" keyProperty="pkId">
     insert into users
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="pkId != null">

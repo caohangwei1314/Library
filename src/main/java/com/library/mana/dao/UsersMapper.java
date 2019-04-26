@@ -1,5 +1,6 @@
 package com.library.mana.dao;
 
+import com.library.mana.domain.Conditions;
 import com.library.mana.domain.Users;
 import com.library.mana.domain.UsersExample;
 import java.util.List;
@@ -34,4 +35,8 @@ public interface UsersMapper {
     int updateByPrimaryKey(Users record);
 
     Users selectByUniqueId(String uniqueId);
+
+    int count(Conditions record);
+
+    List<Users> selectList(Conditions record);
 }

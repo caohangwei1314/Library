@@ -1,11 +1,15 @@
 package com.library.mana.service.impl;
 
 import com.library.mana.dao.UsersMapper;
+import com.library.mana.domain.Conditions;
 import com.library.mana.domain.Users;
 import com.library.mana.service.UsersService;
+import com.library.mana.utils.PageBean;
 import com.library.mana.utils.Sha2Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UsersImpl implements UsersService {
@@ -21,6 +25,19 @@ public class UsersImpl implements UsersService {
     public Users selectByPrimaryKey(Integer pkId)
     {
         return usersMapper.selectByPrimaryKey(pkId);
+    }
+
+    public PageBean selectList(Conditions record){
+        int count = usersMapper.count(record);
+        if(count<0)
+            return null;
+        PageBean pageBean = new PageBean(record.getPage(),count,record.getLimit());
+        record.setOffset(pageBean.getStart());
+        List<Users> usersList = usersMapper.selectList(record);
+        if(usersList.size()<1 || usersList==null)
+            return null;
+        pageBean.setList(usersList);
+        return pageBean;
     }
 
     public int insertSelective(Users record)

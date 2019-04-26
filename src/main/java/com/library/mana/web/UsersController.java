@@ -1,8 +1,10 @@
 package com.library.mana.web;
 
+import com.library.mana.domain.Conditions;
 import com.library.mana.domain.Users;
 import com.library.mana.service.UsersService;
 import com.library.mana.utils.JwtUtil;
+import com.library.mana.utils.PageBean;
 import com.library.mana.utils.Sha2Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -52,6 +54,17 @@ public class UsersController extends BaseController{
         Users users = usersService.selectByPrimaryKey(Integer.parseInt(request.getAttribute("userId").toString()));
         if(users!=null)
             setMsg(1,null,users);
+        else
+            setMsg(0,"用户不存在",null);
+        return msg;
+    }
+
+    @RequestMapping(value = "/list",method = RequestMethod.POST)
+    public Map<String,Object> select(@RequestBody Conditions record)
+    {
+        PageBean pageBean = usersService.selectList(record);
+        if(pageBean!=null)
+            setMsg(1,null,pageBean);
         else
             setMsg(0,"用户不存在",null);
         return msg;

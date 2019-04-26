@@ -301,4 +301,22 @@
     from users
     where unique_id = #{uniqueId,jdbcType=INTEGER}
   </select>
+  <select id="count" parameterType="com.library.mana.domain.Conditions" resultType="java.lang.Integer">
+    select count(*)
+    from users
+    order by pk_id
+  </select>
+  <select id="selectList" parameterType="com.library.mana.domain.Conditions" resultMap="BaseResultMap">
+    select *
+    from users
+    order by pk_id
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset},${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
 </mapper>

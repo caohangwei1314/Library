@@ -22,7 +22,7 @@ public class UsersController extends BaseController{
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public Map<String,Object> login(@RequestBody Users users)
     {
-        Users users1 = usersService.selectByPrimaryKey(users.getPkId());
+        Users users1 = usersService.selectByUniqueId(users.getUniqueId());
         if(Sha2Util.SHA256(users.getPassword()).equals(users1.getPassword())){
             JwtUtil jwtUtil =new JwtUtil();
             try {

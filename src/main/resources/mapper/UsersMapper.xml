@@ -295,4 +295,10 @@
       gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
     where pk_id = #{pkId,jdbcType=INTEGER}
   </update>
+  <select id="selectByUniqueId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from users
+    where unique_id = #{uniqueId,jdbcType=INTEGER}
+  </select>
 </mapper>

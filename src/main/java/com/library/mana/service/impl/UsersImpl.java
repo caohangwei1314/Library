@@ -12,6 +12,11 @@ public class UsersImpl implements UsersService {
     @Autowired
     private UsersMapper usersMapper;
 
+    public Users selectByUniqueId(Integer uniqueId)
+    {
+        return usersMapper.selectByUniqueId(uniqueId);
+    }
+
     public Users selectByPrimaryKey(Integer pkId)
     {
         return usersMapper.selectByPrimaryKey(pkId);

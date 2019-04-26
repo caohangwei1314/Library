@@ -28,4 +28,8 @@ public class UsersImpl implements UsersService {
         record.setPassword(Sha2Util.SHA256(record.getPassword()));
         return usersMapper.insertSelective(record);
     }
+
+    public int deleteByPrimaryKey(Integer pkId){
+        return usersMapper.deleteByPrimaryKey(pkId);
+    }
 }

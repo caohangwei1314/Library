@@ -5,10 +5,7 @@ import com.library.mana.service.UsersService;
 import com.library.mana.utils.JwtUtil;
 import com.library.mana.utils.Sha2Util;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
@@ -57,6 +54,13 @@ public class UsersController extends BaseController{
             setMsg(1,null,users);
         else
             setMsg(0,"用户不存在",null);
+        return null;
+    }
+
+    @RequestMapping(method = RequestMethod.DELETE)
+    public Map<String,Object> delete(@RequestParam("id") Integer id)
+    {
+        setMsg(usersService.deleteByPrimaryKey(id),null,null);
         return null;
     }
 

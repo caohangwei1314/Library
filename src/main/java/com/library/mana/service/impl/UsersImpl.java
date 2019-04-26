@@ -29,6 +29,10 @@ public class UsersImpl implements UsersService {
         return usersMapper.insertSelective(record);
     }
 
+    public int updateByPrimaryKeySelective(Users record){
+        return usersMapper.updateByPrimaryKeySelective(record);
+    }
+
     public int deleteByPrimaryKey(Integer pkId){
         return usersMapper.deleteByPrimaryKey(pkId);
     }

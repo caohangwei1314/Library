@@ -10,5 +10,7 @@ public interface UsersService {
 
     int insertSelective(Users record);
 
+    int updateByPrimaryKeySelective(Users record);
+
     int deleteByPrimaryKey(Integer pkId);
 }

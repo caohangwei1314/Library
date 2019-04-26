@@ -54,14 +54,21 @@ public class UsersController extends BaseController{
             setMsg(1,null,users);
         else
             setMsg(0,"用户不存在",null);
-        return null;
+        return msg;
+    }
+
+    @RequestMapping(method = RequestMethod.PUT)
+    public Map<String,Object> update(@RequestBody Users users)
+    {
+        setMsg(usersService.updateByPrimaryKeySelective(users),null,null);
+        return msg;
     }
 
     @RequestMapping(method = RequestMethod.DELETE)
     public Map<String,Object> delete(@RequestParam("id") Integer id)
     {
         setMsg(usersService.deleteByPrimaryKey(id),null,null);
-        return null;
+        return msg;
     }
 
 }

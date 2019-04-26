@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 @RestController
@@ -46,6 +47,17 @@ public class UsersController extends BaseController{
             setMsg(0,e.getMessage(),null);
         }
         return msg;
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public Map<String,Object> select(HttpServletRequest request)
+    {
+        Users users = usersService.selectByPrimaryKey(Integer.parseInt(request.getAttribute("userId").toString()));
+        if(users!=null)
+            setMsg(1,null,users);
+        else
+            setMsg(0,"用户不存在",null);
+        return null;
     }
 
 }

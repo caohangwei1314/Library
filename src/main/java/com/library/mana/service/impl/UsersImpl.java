@@ -3,6 +3,7 @@ package com.library.mana.service.impl;
 import com.library.mana.dao.UsersMapper;
 import com.library.mana.domain.Users;
 import com.library.mana.service.UsersService;
+import com.library.mana.utils.Sha2Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +25,7 @@ public class UsersImpl implements UsersService {
 
     public int insertSelective(Users record)
     {
+        record.setPassword(Sha2Util.SHA256(record.getPassword()));
         return usersMapper.insertSelective(record);
     }
 }

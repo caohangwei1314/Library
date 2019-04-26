@@ -39,7 +39,12 @@ public class UsersController extends BaseController{
     @RequestMapping(value = "/register",method = RequestMethod.POST)
     public Map<String,Object> insert(@RequestBody Users users)
     {
-        setMsg(usersService.insertSelective(users),null,null);
+        JwtUtil jwtUtil =new JwtUtil();
+        try {
+            setMsg(usersService.insertSelective(users),null,jwtUtil.createJWT(users.getPkId().toString(),users.getUniqueId().toString(),1000*60*60*24));
+        } catch (Exception e) {
+            setMsg(0,e.getMessage(),null);
+        }
         return msg;
     }
 

@@ -4,7 +4,7 @@ import com.library.mana.domain.Users;
 
 public interface UsersService {
 
-    Users selectByUniqueId(Integer uniqueId);
+    Users selectByUniqueId(String uniqueId);
 
     Users selectByPrimaryKey(Integer pkId);
 

@@ -3,7 +3,7 @@
 <mapper namespace="com.library.mana.dao.UsersMapper">
   <resultMap id="BaseResultMap" type="com.library.mana.domain.Users">
     <id column="pk_id" jdbcType="INTEGER" property="pkId" />
-    <result column="unique_id" jdbcType="INTEGER" property="uniqueId" />
+    <result column="unique_id" jdbcType="VARCHAR" property="uniqueId" />
     <result column="class_id" jdbcType="INTEGER" property="classId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="password" jdbcType="VARCHAR" property="password" />
@@ -117,7 +117,7 @@
       name, password, image, 
       num, balance, gmt_create, 
       gmt_modified)
-    values (#{pkId,jdbcType=INTEGER}, #{uniqueId,jdbcType=INTEGER}, #{classId,jdbcType=INTEGER}, 
+    values (#{pkId,jdbcType=INTEGER}, #{uniqueId,jdbcType=VARCHAR}, #{classId,jdbcType=INTEGER}, 
       #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{image,jdbcType=VARCHAR}, 
       #{num,jdbcType=INTEGER}, #{balance,jdbcType=INTEGER}, #{gmtCreate,jdbcType=TIMESTAMP}, 
       #{gmtModified,jdbcType=TIMESTAMP})
@@ -161,7 +161,7 @@
         #{pkId,jdbcType=INTEGER},
       </if>
       <if test="uniqueId != null">
-        #{uniqueId,jdbcType=INTEGER},
+        #{uniqueId,jdbcType=VARCHAR},
       </if>
       <if test="classId != null">
         #{classId,jdbcType=INTEGER},
@@ -202,7 +202,7 @@
         pk_id = #{record.pkId,jdbcType=INTEGER},
       </if>
       <if test="record.uniqueId != null">
-        unique_id = #{record.uniqueId,jdbcType=INTEGER},
+        unique_id = #{record.uniqueId,jdbcType=VARCHAR},
       </if>
       <if test="record.classId != null">
         class_id = #{record.classId,jdbcType=INTEGER},
@@ -236,7 +236,7 @@
   <update id="updateByExample" parameterType="map">
     update users
     set pk_id = #{record.pkId,jdbcType=INTEGER},
-      unique_id = #{record.uniqueId,jdbcType=INTEGER},
+      unique_id = #{record.uniqueId,jdbcType=VARCHAR},
       class_id = #{record.classId,jdbcType=INTEGER},
       name = #{record.name,jdbcType=VARCHAR},
       password = #{record.password,jdbcType=VARCHAR},
@@ -253,7 +253,7 @@
     update users
     <set>
       <if test="uniqueId != null">
-        unique_id = #{uniqueId,jdbcType=INTEGER},
+        unique_id = #{uniqueId,jdbcType=VARCHAR},
       </if>
       <if test="classId != null">
         class_id = #{classId,jdbcType=INTEGER},
@@ -284,7 +284,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.library.mana.domain.Users">
     update users
-    set unique_id = #{uniqueId,jdbcType=INTEGER},
+    set unique_id = #{uniqueId,jdbcType=VARCHAR},
       class_id = #{classId,jdbcType=INTEGER},
       name = #{name,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
@@ -295,7 +295,7 @@
       gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
     where pk_id = #{pkId,jdbcType=INTEGER}
   </update>
-  <select id="selectByUniqueId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByUniqueId" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
     from users

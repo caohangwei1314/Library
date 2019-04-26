@@ -9,7 +9,7 @@ import java.util.Date;
 public class Users implements Serializable {
     private Integer pkId;
 
-    private Integer uniqueId;
+    private String uniqueId;
 
     private Integer classId;
 
@@ -37,11 +37,11 @@ public class Users implements Serializable {
         this.pkId = pkId;
     }
 
-    public Integer getUniqueId() {
+    public String getUniqueId() {
         return uniqueId;
     }
 
-    public void setUniqueId(Integer uniqueId) {
+    public void setUniqueId(String uniqueId) {
         this.uniqueId = uniqueId;
     }
 

@@ -26,7 +26,7 @@ public class UsersController extends BaseController{
         if(Sha2Util.SHA256(users.getPassword()).equals(users1.getPassword())){
             JwtUtil jwtUtil =new JwtUtil();
             try {
-                setMsg(1,null, jwtUtil.createJWT(users1.getPkId().toString(),users1.getUniqueId().toString(),1000*60*60*24));
+                setMsg(1,null, jwtUtil.createJWT(users1.getPkId().toString(),users1.getUniqueId(),1000*60*60*24));
             } catch (Exception e) {
                 setMsg(0,e.getMessage(),null);
             }
@@ -41,7 +41,7 @@ public class UsersController extends BaseController{
     {
         JwtUtil jwtUtil =new JwtUtil();
         try {
-            setMsg(usersService.insertSelective(users),null,jwtUtil.createJWT(users.getPkId().toString(),users.getUniqueId().toString(),1000*60*60*24));
+            setMsg(usersService.insertSelective(users),null,jwtUtil.createJWT(users.getPkId().toString(),users.getUniqueId(),1000*60*60*24));
         } catch (Exception e) {
             setMsg(0,e.getMessage(),null);
         }

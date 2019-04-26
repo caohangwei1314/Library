@@ -13,7 +13,7 @@ public class UsersImpl implements UsersService {
     @Autowired
     private UsersMapper usersMapper;
 
-    public Users selectByUniqueId(Integer uniqueId)
+    public Users selectByUniqueId(String uniqueId)
     {
         return usersMapper.selectByUniqueId(uniqueId);
     }

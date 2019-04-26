@@ -33,5 +33,5 @@ public interface UsersMapper {
 
     int updateByPrimaryKey(Users record);
 
-    Users selectByUniqueId(Integer uniqueId);
+    Users selectByUniqueId(String uniqueId);
 }

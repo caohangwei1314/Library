@@ -6,4 +6,5 @@ public interface UsersService {
 
     Users selectByPrimaryKey(Integer pkId);
 
+    int insertSelective(Users record);
 }

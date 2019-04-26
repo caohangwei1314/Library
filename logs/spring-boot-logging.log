@@ -8,3 +8,23 @@
 2019-04-26 19:00:28.915  INFO 11004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2019-04-26 19:00:29.369  INFO 11004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2019-04-26 19:00:29.369  INFO 11004 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.795 seconds (JVM running for 4.525)
+2019-04-26 19:04:45.333  INFO 6736 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 6736 (started by chw in E:\网站设计\mana)
+2019-04-26 19:04:45.337  INFO 6736 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-26 19:04:47.152  INFO 6736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-26 19:04:47.167  INFO 6736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-26 19:04:47.183  INFO 6736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 19:04:47.281  INFO 6736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-26 19:04:47.282  INFO 6736 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1868 ms
+2019-04-26 19:04:47.733  INFO 6736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 19:04:48.067  INFO 6736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-26 19:04:48.067  INFO 6736 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.472 seconds (JVM running for 4.497)
+2019-04-26 19:09:39.747  INFO 11632 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 11632 (started by chw in E:\网站设计\mana)
+2019-04-26 19:09:39.747  INFO 11632 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-26 19:09:41.763  INFO 11632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-26 19:09:41.781  INFO 11632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-26 19:09:41.782  INFO 11632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 19:09:41.849  INFO 11632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-26 19:09:41.864  INFO 11632 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2021 ms
+2019-04-26 19:09:42.286  INFO 11632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 19:09:42.599  INFO 11632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-26 19:09:42.599  INFO 11632 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.4 seconds (JVM running for 4.21)

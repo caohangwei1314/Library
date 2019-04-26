@@ -36,4 +36,11 @@ public class UsersController extends BaseController{
         return msg;
     }
 
+    @RequestMapping(value = "/register",method = RequestMethod.POST)
+    public Map<String,Object> insert(@RequestBody Users users)
+    {
+        setMsg(usersService.insertSelective(users),null,null);
+        return msg;
+    }
+
 }

@@ -19,6 +19,8 @@ public class InterceptorConfiguration extends WebMvcConfigurerAdapter {
         ir.excludePathPatterns("/**/login");
 
         ir.excludePathPatterns("/**/register");
+
+        ir.excludePathPatterns("/**/list");
         // 还可以在这里注册其它的拦截器
         //registry.addInterceptor(new OtherInterceptor()).addPathPatterns("/**");
     }

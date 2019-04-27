@@ -201,4 +201,25 @@
       gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
     where pk_id = #{pkId,jdbcType=INTEGER}
   </update>
+  <select id="count" parameterType="com.library.mana.domain.Conditions" resultType="java.lang.Integer">
+    select count(*)
+    from books_class
+  </select>
+  <select id="selectList" parameterType="com.library.mana.domain.Conditions" resultMap="BaseResultMap">
+    select *
+    from books_class
+    where 1=1
+    <if test="name != null">
+      and name like concat('%',#{name,jdbcType=VARCHAR},'%')
+    </if>
+    order by pk_id
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset},${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
 </mapper>

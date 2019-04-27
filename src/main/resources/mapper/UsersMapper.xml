@@ -304,7 +304,6 @@
   <select id="count" parameterType="com.library.mana.domain.Conditions" resultType="java.lang.Integer">
     select count(*)
     from users
-    order by pk_id
   </select>
   <select id="selectList" parameterType="com.library.mana.domain.Conditions" resultMap="BaseResultMap">
     select *

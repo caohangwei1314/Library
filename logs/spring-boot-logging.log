@@ -339,3 +339,60 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2019-04-27 16:29:23.428  INFO 8520 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2019-04-27 16:29:23.428  WARN 8520 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
 2019-04-27 16:29:23.877  INFO 8520 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 18:25:56.717  INFO 6592 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 6592 (started by chw in E:\网站设计\mana)
+2019-04-27 18:25:56.719  INFO 6592 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 18:25:58.512  INFO 6592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 18:25:58.535  INFO 6592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 18:25:58.536  INFO 6592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 18:25:58.634  INFO 6592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 18:25:58.634  INFO 6592 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1718 ms
+2019-04-27 18:25:59.112  INFO 6592 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 18:25:59.443  INFO 6592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 18:25:59.445  INFO 6592 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.466 seconds (JVM running for 4.375)
+2019-04-27 18:27:59.305  INFO 6592 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 18:27:59.305  INFO 6592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 18:27:59.315  INFO 6592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-04-27 18:28:16.955  WARN 6592 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 18:28:16.957  INFO 6592 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 18:28:16.958  WARN 6592 --- [http-nio-8080-exec-3] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 18:28:17.460  INFO 6592 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 18:30:42.260  INFO 6492 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 6492 (started by chw in E:\网站设计\mana)
+2019-04-27 18:30:42.262  INFO 6492 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 18:30:44.808  INFO 6492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 18:30:44.841  INFO 6492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 18:30:44.842  INFO 6492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 18:30:44.984  INFO 6492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 18:30:44.985  INFO 6492 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2596 ms
+2019-04-27 18:30:45.675  INFO 6492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 18:30:46.076  INFO 6492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 18:30:46.080  INFO 6492 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 4.532 seconds (JVM running for 5.585)
+2019-04-27 18:30:54.335  INFO 4036 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 4036 (started by chw in E:\网站设计\mana)
+2019-04-27 18:30:54.338  INFO 4036 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 18:30:56.647  INFO 4036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 18:30:56.671  INFO 4036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 18:30:56.671  INFO 4036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 18:30:56.780  INFO 4036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 18:30:56.780  INFO 4036 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2384 ms
+2019-04-27 18:30:57.368  INFO 4036 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 18:30:57.774  INFO 4036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 18:30:57.779  INFO 4036 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.979 seconds (JVM running for 5.06)
+2019-04-27 18:31:07.315  INFO 4036 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 18:31:07.315  INFO 4036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 18:31:07.325  INFO 4036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-04-27 18:31:25.296  INFO 7876 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 7876 (started by chw in E:\网站设计\mana)
+2019-04-27 18:31:25.298  INFO 7876 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 18:31:27.528  INFO 7876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 18:31:27.556  INFO 7876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 18:31:27.557  INFO 7876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 18:31:27.659  INFO 7876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 18:31:27.659  INFO 7876 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2270 ms
+2019-04-27 18:31:28.268  INFO 7876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 18:31:28.825  INFO 7876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 18:31:28.828  INFO 7876 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 4.371 seconds (JVM running for 5.554)
+2019-04-27 18:31:30.200  INFO 7876 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 18:31:30.201  INFO 7876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 18:31:30.209  INFO 7876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-04-27 18:31:30.385  WARN 7876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 18:31:30.386  INFO 7876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 18:31:30.387  WARN 7876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 18:31:30.853  INFO 7876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

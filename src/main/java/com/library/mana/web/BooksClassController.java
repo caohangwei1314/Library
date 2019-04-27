@@ -36,7 +36,7 @@ public class BooksClassController extends BaseController{
 
 
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "/list",method = RequestMethod.POST)
     public Map<String,Object> selectList(@RequestBody Conditions record)
     {
         PageBean pageBean = booksClassService.selectList(record);
@@ -44,6 +44,13 @@ public class BooksClassController extends BaseController{
             setMsg(1,null,pageBean);
         else
             setMsg(0,"暂无类别！",null);
+        return msg;
+    }
+
+    @RequestMapping(method = RequestMethod.PUT)
+    public Map<String,Object> update(@RequestBody BooksClass record)
+    {
+        setMsg(booksClassService.updateByPrimaryKeySelective(record),null,null);
         return msg;
     }
 }

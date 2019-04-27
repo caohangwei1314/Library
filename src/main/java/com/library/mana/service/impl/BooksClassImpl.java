@@ -42,4 +42,10 @@ public class BooksClassImpl implements BooksClassService {
         pageBean.setList(booksClassList);
         return pageBean;
     }
+
+    public int updateByPrimaryKeySelective(BooksClass record)
+    {
+        record.setGmtModified(new Date());
+        return booksClassMapper.updateByPrimaryKeySelective(record);
+    }
 }

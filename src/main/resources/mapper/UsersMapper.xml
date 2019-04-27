@@ -309,6 +309,13 @@
   <select id="selectList" parameterType="com.library.mana.domain.Conditions" resultMap="BaseResultMap">
     select *
     from users
+    where class_id != 0
+    <if test="name != null">
+      and name like concat('%',#{name,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="classId != null">
+      and class_id = #{classId,jdbcType=INTEGER}
+    </if>
     order by pk_id
     <if test="limit != null">
       <if test="offset != null">

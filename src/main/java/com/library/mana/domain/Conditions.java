@@ -8,6 +8,26 @@ public class Conditions {
 
     private Integer offset;
 
+    private String name;
+
+    private Integer classId;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getClassId() {
+        return classId;
+    }
+
+    public void setClassId(Integer classId) {
+        this.classId = classId;
+    }
+
     public Integer getLimit() {
         return limit;
     }

@@ -3,8 +3,13 @@ package com.library.mana.dao;
 import com.library.mana.domain.BooksClass;
 import com.library.mana.domain.BooksClassExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
+@Repository
+@Mapper
 public interface BooksClassMapper {
     long countByExample(BooksClassExample example);
 

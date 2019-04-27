@@ -9,6 +9,7 @@ import com.library.mana.utils.Sha2Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -42,11 +43,15 @@ public class UsersImpl implements UsersService {
 
     public int insertSelective(Users record)
     {
+        Date date = new Date();
+        record.setGmtCreate(date);
+        record.setGmtModified(date);
         record.setPassword(Sha2Util.SHA256(record.getPassword()));
         return usersMapper.insertSelective(record);
     }
 
     public int updateByPrimaryKeySelective(Users record){
+        record.setGmtModified(new Date());
         return usersMapper.updateByPrimaryKeySelective(record);
     }
 

@@ -66,3 +66,276 @@
 2019-04-27 14:16:27.879  INFO 4876 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-04-27 14:16:27.879  INFO 4876 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2019-04-27 14:16:27.895  INFO 4876 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-27 14:24:07.371  INFO 5488 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 5488 (started by chw in E:\网站设计\mana)
+2019-04-27 14:24:07.378  INFO 5488 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 14:24:09.275  INFO 5488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 14:24:09.307  INFO 5488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 14:24:09.307  INFO 5488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 14:24:09.385  INFO 5488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 14:24:09.385  INFO 5488 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1926 ms
+2019-04-27 14:24:09.823  INFO 5488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 14:24:10.158  INFO 5488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 14:24:10.158  INFO 5488 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.288 seconds (JVM running for 4.042)
+2019-04-27 14:35:56.004  INFO 5488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 14:35:56.004  INFO 5488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 14:35:56.020  INFO 5488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-04-27 14:53:06.834  WARN 5488 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-27 14:54:23.236  INFO 2364 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 2364 (started by chw in E:\网站设计\mana)
+2019-04-27 14:54:23.240  INFO 2364 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 14:54:25.379  INFO 2364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 14:54:25.410  INFO 2364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 14:54:25.410  INFO 2364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 14:54:25.505  INFO 2364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 14:54:25.505  INFO 2364 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2213 ms
+2019-04-27 14:54:26.058  INFO 2364 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 14:54:26.423  INFO 2364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 14:54:26.438  INFO 2364 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.977 seconds (JVM running for 5.893)
+2019-04-27 14:54:55.406  INFO 2364 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 14:54:55.406  INFO 2364 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 14:54:55.415  INFO 2364 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-04-27 14:54:56.184  WARN 2364 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 14:54:56.184  INFO 2364 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 14:54:56.184  WARN 2364 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 14:54:56.669  INFO 2364 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 14:54:56.849 ERROR 2364 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name like concat('%','曹杭伟','%')
+     
+     
+      class_id = 2
+     
+    o' at line 5
+### The error may exist in file [E:\网站设计\mana\target\classes\mapper\UsersMapper.xml]
+### The error may involve com.library.mana.dao.UsersMapper.selectList-Inline
+### The error occurred while setting parameters
+### SQL: select *     from users     where class_id != 0             name like concat('%',?,'%')                   class_id = ?           order by pk_id                       limit 0,10
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name like concat('%','曹杭伟','%')
+     
+     
+      class_id = 2
+     
+    o' at line 5
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name like concat('%','曹杭伟','%')
+     
+     
+      class_id = 2
+     
+    o' at line 5] with root cause
+
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name like concat('%','曹杭伟','%')
+     
+     
+      class_id = 2
+     
+    o' at line 5
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:970) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:387) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.1.jar:3.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at com.sun.proxy.$Proxy55.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.5.1.jar:3.5.1]
+	at com.sun.proxy.$Proxy56.selectList(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.sun.proxy.$Proxy58.selectList(Unknown Source) ~[na:na]
+	at com.library.mana.service.impl.UsersImpl.selectList(UsersImpl.java:36) ~[classes/:na]
+	at com.library.mana.web.UsersController.select(UsersController.java:65) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2019-04-27 14:55:20.175  INFO 2544 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 2544 (started by chw in E:\网站设计\mana)
+2019-04-27 14:55:20.191  INFO 2544 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 14:55:22.162  INFO 2544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 14:55:22.177  INFO 2544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 14:55:22.177  INFO 2544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 14:55:22.258  INFO 2544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 14:55:22.258  INFO 2544 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1993 ms
+2019-04-27 14:55:22.677  INFO 2544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 14:55:22.986  INFO 2544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 14:55:22.986  INFO 2544 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.305 seconds (JVM running for 4.069)
+2019-04-27 14:55:40.618  INFO 2544 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 14:55:40.618  INFO 2544 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 14:55:40.624  INFO 2544 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-27 14:55:40.960  WARN 2544 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 14:55:40.961  INFO 2544 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 14:55:40.963  WARN 2544 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 14:55:41.416  INFO 2544 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 14:55:42.554  WARN 2544 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-27 14:56:29.497  WARN 2544 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-27 14:58:02.403  INFO 1988 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 1988 (started by chw in E:\网站设计\mana)
+2019-04-27 14:58:02.406  INFO 1988 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 14:58:04.263  INFO 1988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 14:58:04.294  INFO 1988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 14:58:04.294  INFO 1988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 14:58:04.372  INFO 1988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 14:58:04.372  INFO 1988 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1908 ms
+2019-04-27 14:58:04.841  INFO 1988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 14:58:05.122  INFO 1988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 14:58:05.122  INFO 1988 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.251 seconds (JVM running for 4.129)
+2019-04-27 14:58:22.785  INFO 1988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 14:58:22.785  INFO 1988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 14:58:22.785  INFO 1988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2019-04-27 14:58:22.832  WARN 1988 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-27 14:58:23.769  WARN 1988 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-27 14:58:40.929  WARN 1988 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-27 15:00:02.406  WARN 1988 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-27 15:00:28.916  WARN 1988 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-27 15:01:19.202  WARN 1988 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-04-27 15:02:59.388  INFO 7240 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 7240 (started by chw in E:\网站设计\mana)
+2019-04-27 15:02:59.403  INFO 7240 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 15:03:00.820  INFO 7240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 15:03:00.840  INFO 7240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 15:03:00.840  INFO 7240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 15:03:00.949  INFO 7240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 15:03:00.949  INFO 7240 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1494 ms
+2019-04-27 15:03:01.459  INFO 7240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 15:03:01.853  INFO 7240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 15:03:01.857  INFO 7240 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 2.927 seconds (JVM running for 3.773)
+2019-04-27 15:03:08.581  INFO 7240 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 15:03:08.582  INFO 7240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 15:03:08.596  INFO 7240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-04-27 15:03:16.439  INFO 7240 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-27 15:03:21.643  INFO 380 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 380 (started by chw in E:\网站设计\mana)
+2019-04-27 15:03:21.645  INFO 380 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 15:03:23.419  INFO 380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 15:03:23.434  INFO 380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 15:03:23.434  INFO 380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 15:03:23.528  INFO 380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 15:03:23.528  INFO 380 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1821 ms
+2019-04-27 15:03:24.007  INFO 380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 15:03:24.326  INFO 380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 15:03:24.341  INFO 380 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.184 seconds (JVM running for 3.973)
+2019-04-27 15:10:47.348  INFO 380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 15:10:47.348  INFO 380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 15:10:47.364  INFO 380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-04-27 15:11:12.008  WARN 380 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 15:11:12.008  INFO 380 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 15:11:12.008  WARN 380 --- [http-nio-8080-exec-5] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 15:11:12.485  INFO 380 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 15:15:09.956  INFO 10152 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 10152 (started by chw in E:\网站设计\mana)
+2019-04-27 15:15:09.956  INFO 10152 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 15:15:11.725  INFO 10152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 15:15:11.756  INFO 10152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 15:15:11.756  INFO 10152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 15:15:11.834  INFO 10152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 15:15:11.834  INFO 10152 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1816 ms
+2019-04-27 15:15:12.319  INFO 10152 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 15:15:12.637  INFO 10152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 15:15:12.653  INFO 10152 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.178 seconds (JVM running for 3.918)
+2019-04-27 15:15:16.939  INFO 10152 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 15:15:16.939  INFO 10152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 15:15:16.939  INFO 10152 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2019-04-27 15:15:17.048  WARN 10152 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 15:15:17.048  INFO 10152 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 15:15:17.048  WARN 10152 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 15:15:17.499  INFO 10152 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 15:38:43.437  WARN 10152 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.Map<java.lang.String, java.lang.Object> com.library.mana.web.UsersController.select(com.library.mana.domain.Conditions)]
+2019-04-27 15:39:44.846  WARN 10152 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.Map<java.lang.String, java.lang.Object> com.library.mana.web.UsersController.select(com.library.mana.domain.Conditions)]
+2019-04-27 15:40:21.427  WARN 10152 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.Map<java.lang.String, java.lang.Object> com.library.mana.web.UsersController.select(com.library.mana.domain.Conditions)]
+2019-04-27 15:41:20.986  WARN 10152 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.Map<java.lang.String, java.lang.Object> com.library.mana.web.UsersController.select(com.library.mana.domain.Conditions)]
+2019-04-27 15:41:31.775  WARN 10152 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.Map<java.lang.String, java.lang.Object> com.library.mana.web.UsersController.select(com.library.mana.domain.Conditions)]
+2019-04-27 15:41:49.150  WARN 10152 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.Map<java.lang.String, java.lang.Object> com.library.mana.web.UsersController.select(com.library.mana.domain.Conditions)]
+2019-04-27 15:41:58.743  WARN 10152 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.Map<java.lang.String, java.lang.Object> com.library.mana.web.UsersController.select(com.library.mana.domain.Conditions)]
+2019-04-27 15:43:06.519  WARN 10152 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.Map<java.lang.String, java.lang.Object> com.library.mana.web.UsersController.select(com.library.mana.domain.Conditions)]
+2019-04-27 16:13:44.403  WARN 10152 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2019-04-27T08:13:21.915Z": not a valid representation (error: Failed to parse Date value '2019-04-27T08:13:21.915Z': Unparseable date: "2019-04-27T08:13:21.915Z"); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2019-04-27T08:13:21.915Z": not a valid representation (error: Failed to parse Date value '2019-04-27T08:13:21.915Z': Unparseable date: "2019-04-27T08:13:21.915Z")
+ at [Source: (PushbackInputStream); line: 1, column: 89] (through reference chain: com.library.mana.domain.Users["gmtCreate"])]
+2019-04-27 16:28:45.063  INFO 8520 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 8520 (started by chw in E:\网站设计\mana)
+2019-04-27 16:28:45.065  INFO 8520 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 16:28:46.894  INFO 8520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 16:28:46.925  INFO 8520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 16:28:46.925  INFO 8520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 16:28:47.003  INFO 8520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 16:28:47.003  INFO 8520 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1893 ms
+2019-04-27 16:28:47.442  INFO 8520 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 16:28:47.781  INFO 8520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 16:28:47.797  INFO 8520 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.266 seconds (JVM running for 4.026)
+2019-04-27 16:29:23.303  INFO 8520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 16:29:23.303  INFO 8520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 16:29:23.319  INFO 8520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-04-27 16:29:23.428  WARN 8520 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 16:29:23.428  INFO 8520 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 16:29:23.428  WARN 8520 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 16:29:23.877  INFO 8520 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

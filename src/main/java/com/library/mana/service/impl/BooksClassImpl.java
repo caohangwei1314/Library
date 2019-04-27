@@ -48,4 +48,9 @@ public class BooksClassImpl implements BooksClassService {
         record.setGmtModified(new Date());
         return booksClassMapper.updateByPrimaryKeySelective(record);
     }
+
+    public int deleteByPrimaryKey(Integer pkId)
+    {
+        return booksClassMapper.deleteByPrimaryKey(pkId);
+    }
 }

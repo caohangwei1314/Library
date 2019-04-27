@@ -13,4 +13,6 @@ public interface BooksClassService {
     PageBean selectList(Conditions record);
 
     int updateByPrimaryKeySelective(BooksClass record);
+
+    int deleteByPrimaryKey(Integer pkId);
 }

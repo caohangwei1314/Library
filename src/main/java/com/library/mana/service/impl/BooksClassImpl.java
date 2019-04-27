@@ -22,4 +22,9 @@ public class BooksClassImpl implements BooksClassService {
         return booksClassMapper.insertSelective(record);
     }
 
+    public BooksClass selectByPrimaryKey(Integer pkId)
+    {
+        return booksClassMapper.selectByPrimaryKey(pkId);
+    }
+
 }

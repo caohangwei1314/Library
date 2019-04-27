@@ -78,9 +78,14 @@ public class UsersController extends BaseController{
     }
 
     @RequestMapping(method = RequestMethod.DELETE)
-    public Map<String,Object> delete(@RequestParam("id") Integer id)
+    public Map<String,Object> delete(@RequestParam("id") Integer id,HttpServletRequest request)
     {
-        setMsg(usersService.deleteByPrimaryKey(id),null,null);
+        Integer usersId = Integer.parseInt(request.getAttribute("userId").toString());
+        Users users = usersService.selectByPrimaryKey(usersId);
+        if(users.getClassId()==0)
+            setMsg(usersService.deleteByPrimaryKey(id),null,null);
+        else
+            setMsg(0,"你没有权限！",null);
         return msg;
     }
 

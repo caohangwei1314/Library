@@ -34,4 +34,16 @@ public class BooksClassController extends BaseController{
         return msg;
     }
 
+
+
+    @RequestMapping(method = RequestMethod.POST)
+    public Map<String,Object> selectList(@RequestBody Conditions record)
+    {
+        PageBean pageBean = booksClassService.selectList(record);
+        if(pageBean!=null)
+            setMsg(1,null,pageBean);
+        else
+            setMsg(0,"暂无类别！",null);
+        return msg;
+    }
 }

@@ -4,6 +4,7 @@ import com.library.mana.domain.BooksClass;
 import com.library.mana.domain.BooksClassExample;
 import java.util.List;
 
+import com.library.mana.domain.Conditions;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -32,4 +33,8 @@ public interface BooksClassMapper {
     int updateByPrimaryKeySelective(BooksClass record);
 
     int updateByPrimaryKey(BooksClass record);
+
+    int count(Conditions record);
+
+    List<BooksClass> selectList(Conditions record);
 }

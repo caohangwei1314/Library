@@ -1,5 +1,7 @@
 package com.library.mana.utils;
 
+import com.library.mana.domain.Conditions;
+
 import java.util.List;
 
 public class PageBean {
@@ -13,7 +15,7 @@ public class PageBean {
 	private Integer totalPage;
 	//分页列表数据
 	private List	list;
-	public PageBean(Integer currentPage, Integer totalCount, Integer pageSize) {
+	public PageBean(Integer currentPage, Integer totalCount, Integer pageSize, Conditions record) {
 				this.totalCount = totalCount;
 
 				this.pageSize =  pageSize;
@@ -42,7 +44,7 @@ public class PageBean {
 		if(this.currentPage > this.totalPage){
 			this.currentPage = this.totalPage;
 		}
-		
+		record.setOffset(getStart());
 	}
 	//计算起始索引
 	public int getStart(){

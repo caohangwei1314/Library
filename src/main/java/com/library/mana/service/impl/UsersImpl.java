@@ -32,8 +32,7 @@ public class UsersImpl implements UsersService {
         int count = usersMapper.count(record);
         if(count<0)
             return null;
-        PageBean pageBean = new PageBean(record.getPage(),count,record.getLimit());
-        record.setOffset(pageBean.getStart());
+        PageBean pageBean = new PageBean(record.getPage(),count,record.getLimit(),record);
         List<Users> usersList = usersMapper.selectList(record);
         if(usersList.size()<1 || usersList==null)
             return null;

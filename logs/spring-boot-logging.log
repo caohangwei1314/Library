@@ -374,3 +374,20 @@ java.lang.NullPointerException: null
 2019-04-28 17:49:14.483  INFO 10876 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2019-04-28 17:49:14.486  WARN 10876 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
 2019-04-28 17:49:14.918  INFO 10876 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-28 17:49:41.074  INFO 4864 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 4864 (started by chw in E:\网站设计\mana)
+2019-04-28 17:49:41.078  INFO 4864 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-28 17:49:43.135  INFO 4864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-28 17:49:43.155  INFO 4864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-28 17:49:43.156  INFO 4864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-28 17:49:43.248  INFO 4864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-28 17:49:43.249  INFO 4864 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2119 ms
+2019-04-28 17:49:44.014  INFO 4864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 17:49:44.408  INFO 4864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-28 17:49:44.412  INFO 4864 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 4.125 seconds (JVM running for 4.96)
+2019-04-28 17:49:49.072  INFO 4864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-28 17:49:49.073  INFO 4864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-28 17:49:49.098  INFO 4864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-04-28 17:50:01.688  WARN 4864 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-28 17:50:01.689  INFO 4864 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-28 17:50:01.690  WARN 4864 --- [http-nio-8080-exec-4] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-28 17:50:02.118  INFO 4864 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

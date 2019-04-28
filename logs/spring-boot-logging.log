@@ -396,3 +396,63 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2019-04-27 18:31:30.386  INFO 7876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2019-04-27 18:31:30.387  WARN 7876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
 2019-04-27 18:31:30.853  INFO 7876 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 18:31:59.448  INFO 10064 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 10064 (started by chw in E:\网站设计\mana)
+2019-04-27 18:31:59.450  INFO 10064 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 18:32:01.933  INFO 10064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 18:32:01.962  INFO 10064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 18:32:01.962  INFO 10064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 18:32:02.065  INFO 10064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 18:32:02.066  INFO 10064 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2503 ms
+2019-04-27 18:32:02.711  INFO 10064 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 18:32:03.098  INFO 10064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 18:32:03.102  INFO 10064 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 4.323 seconds (JVM running for 5.378)
+2019-04-27 18:32:10.515  INFO 10064 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 18:32:10.516  INFO 10064 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 18:32:10.531  INFO 10064 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-04-27 18:32:10.721  WARN 10064 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 18:32:10.723  INFO 10064 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 18:32:10.724  WARN 10064 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 18:32:11.220  INFO 10064 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 18:44:28.732  INFO 8084 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 8084 (started by chw in E:\网站设计\mana)
+2019-04-27 18:44:28.734  INFO 8084 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 18:44:30.808  INFO 8084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 18:44:30.834  INFO 8084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 18:44:30.834  INFO 8084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 18:44:30.916  INFO 8084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 18:44:30.917  INFO 8084 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2137 ms
+2019-04-27 18:44:31.405  INFO 8084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 18:44:31.750  INFO 8084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 18:44:31.753  INFO 8084 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.63 seconds (JVM running for 4.429)
+2019-04-27 18:44:52.850  INFO 8084 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 18:44:52.850  INFO 8084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 18:44:52.857  INFO 8084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-04-27 18:44:52.990  WARN 8084 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 18:44:52.992  INFO 8084 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 18:44:52.999  WARN 8084 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 18:44:53.449  INFO 8084 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 19:22:01.275  INFO 6240 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on DESKTOP-70JBHIR with PID 6240 (started by chw in E:\网站设计\mana)
+2019-04-27 19:22:01.291  INFO 6240 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-04-27 19:22:03.007  INFO 6240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-27 19:22:03.022  INFO 6240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-27 19:22:03.022  INFO 6240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-27 19:22:03.100  INFO 6240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-27 19:22:03.100  INFO 6240 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1762 ms
+2019-04-27 19:22:03.554  INFO 6240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-27 19:22:03.882  INFO 6240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-27 19:22:03.882  INFO 6240 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 3.013 seconds (JVM running for 3.731)
+2019-04-27 19:22:36.569  INFO 6240 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-27 19:22:36.569  INFO 6240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-27 19:22:36.585  INFO 6240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-04-27 19:22:36.857  WARN 6240 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-04-27 19:22:37.029  INFO 6240 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-27 19:22:37.031  WARN 6240 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-27 19:22:37.441  INFO 6240 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-27 19:29:30.845  WARN 6240 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'id' is not present]
+2019-04-27 19:38:10.996  WARN 6240 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "学生": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "学生": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 34] (through reference chain: com.library.mana.domain.Users["classId"])]
+2019-04-27 19:38:18.529  WARN 6240 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "学生": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "学生": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 34] (through reference chain: com.library.mana.domain.Users["classId"])]
+2019-04-27 19:38:32.377  WARN 6240 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "学生": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "学生": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 34] (through reference chain: com.library.mana.domain.Users["classId"])]
+2019-04-27 19:38:38.904  WARN 6240 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "学生": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "学生": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 1, column: 34] (through reference chain: com.library.mana.domain.Users["classId"])]

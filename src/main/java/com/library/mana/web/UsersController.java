@@ -59,6 +59,17 @@ public class UsersController extends BaseController{
         return msg;
     }
 
+    @RequestMapping(value = "/detail",method = RequestMethod.GET)
+    public Map<String,Object> selectDetail(@RequestParam("id") Integer id)
+    {
+        Users users = usersService.selectByPrimaryKey(id);
+        if(users!=null)
+            setMsg(1,null,users);
+        else
+            setMsg(0,"用户不存在",null);
+        return msg;
+    }
+
     @RequestMapping(value = "/list",method = RequestMethod.POST)
     public Map<String,Object> select(@RequestBody Conditions record)
     {

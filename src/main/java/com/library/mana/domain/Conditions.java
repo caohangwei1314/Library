@@ -16,6 +16,16 @@ public class Conditions {
 
     private String author;
 
+    private Integer status;
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
     public String getPublishers() {
         return publishers;
     }

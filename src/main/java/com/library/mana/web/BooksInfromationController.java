@@ -51,4 +51,11 @@ public class BooksInfromationController extends BaseController{
         setMsg(booksInformationService.updateByPrimaryKeySelective(record),null,null);
         return msg;
     }
+
+    @RequestMapping(method = RequestMethod.DELETE)
+    public Map<String,Object> delete(@RequestParam("id") Integer id)
+    {
+        setMsg(booksInformationService.deleteByPrimaryKey(id),null,null);
+        return msg;
+    }
 }

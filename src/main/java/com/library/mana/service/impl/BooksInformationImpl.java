@@ -47,4 +47,9 @@ public class BooksInformationImpl implements BooksInformationService {
         record.setGmtModified(new Date());
         return booksInformationMapper.updateByPrimaryKeySelective(record);
     }
+
+    public int deleteByPrimaryKey(Integer pkId)
+    {
+        return booksInformationMapper.deleteByPrimaryKey(pkId);
+    }
 }

@@ -14,4 +14,5 @@ public interface BooksInformationService {
 
     int updateByPrimaryKeySelective(BooksInformation record);
 
+    int deleteByPrimaryKey(Integer pkId);
 }

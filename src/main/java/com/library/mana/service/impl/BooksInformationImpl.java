@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.awt.print.Book;
 import java.io.*;
 import java.util.Date;
 import java.util.List;
@@ -38,7 +39,10 @@ public class BooksInformationImpl implements BooksInformationService {
 
     public BooksInformation selectByPrimaryKey(Integer id)
     {
-        return booksInformationMapper.selectByPrimaryKey(id);
+        BooksInformation booksInformation =booksInformationMapper.selectByPrimaryKey(id);
+        if(booksInformation.getImage()!=null && !"".equals(booksInformation))
+            booksInformation.setImage(getUrl(booksInformation.getImage()));
+        return booksInformation;
     }
 
     public PageBean selectList(Conditions record)
@@ -47,13 +51,21 @@ public class BooksInformationImpl implements BooksInformationService {
         if(count<1)
             return null;
         PageBean pageBean = new PageBean(record.getPage(),count,record.getLimit(),record);
-        pageBean.setList(booksInformationMapper.selectList(record));
+        List<BooksInformation> booksInformationList = booksInformationMapper.selectList(record);
+        for(BooksInformation booksInformation : booksInformationList)
+            if(booksInformation.getImage()!=null && !"".equals(booksInformation))
+                booksInformation.setImage(getUrl(booksInformation.getImage()));
+        pageBean.setList(booksInformationList);
         return pageBean;
     }
 
     public int updateByPrimaryKeySelective(BooksInformation record)
     {
         record.setGmtModified(new Date());
+        if(record.getImage()!=null && !"".equals(record.getImage())){
+            String[] images = record.getImage().split("\\\\");
+            record.setImage(images[images.length-1]);
+        }
         return booksInformationMapper.updateByPrimaryKeySelective(record);
     }
 

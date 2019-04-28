@@ -24,4 +24,9 @@ public class BooksInformationImpl implements BooksInformationService {
         return booksInformationMapper.insertSelective(record);
     }
 
+    public BooksInformation selectByPrimaryKey(Integer id)
+    {
+        return booksInformationMapper.selectByPrimaryKey(id);
+    }
+
 }

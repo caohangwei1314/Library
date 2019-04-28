@@ -3,10 +3,7 @@ package com.library.mana.web;
 import com.library.mana.domain.BooksInformation;
 import com.library.mana.service.BooksInformationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -24,4 +21,14 @@ public class BooksInfromationController extends BaseController{
         return msg;
     }
 
+    @RequestMapping(value = "/detail",method = RequestMethod.GET)
+    public Map<String,Object> select(@RequestParam("id") Integer id)
+    {
+        BooksInformation booksInformation = booksInformationService.selectByPrimaryKey(id);
+        if(booksInformation!=null)
+            setMsg(1,null,booksInformation);
+        else
+            setMsg(0,"该信息不存在！",null);
+        return msg;
+    }
 }

@@ -6,4 +6,5 @@ public interface BooksInformationService {
 
     int insertSelective(BooksInformation record);
 
+    BooksInformation selectByPrimaryKey(Integer pkId);
 }

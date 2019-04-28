@@ -85,7 +85,7 @@ public class BooksInformationImpl implements BooksInformationService {
             }
             else
             {
-                name = UUID.randomUUID().toString() + System.currentTimeMillis();
+                name = UUID.randomUUID().toString() + System.currentTimeMillis() + "." + suffix;
             }
             File file = new File(this.PATH);
             if(!file.exists())
@@ -113,6 +113,6 @@ public class BooksInformationImpl implements BooksInformationService {
 
     private String getUrl(String name)
     {
-        return this.IP + File.separator + "images" + File.separator + name;
+        return "http://" + this.IP + "/" + "books" + "/" + "images" + "/" + name;
     }
 }

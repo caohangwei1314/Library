@@ -61,7 +61,7 @@ public class BooksInfromationController extends BaseController{
     }
 
     @RequestMapping(value = "/temp",method = RequestMethod.POST)
-    public Map<String,Object> upload(@RequestBody MultipartFile file)
+    public Map<String,Object> upload(@RequestParam("file") MultipartFile file)
     {
         String url = booksInformationService.uploadTemp(file);
         if(url!=null)

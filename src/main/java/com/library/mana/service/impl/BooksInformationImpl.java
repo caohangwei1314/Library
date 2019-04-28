@@ -27,8 +27,10 @@ public class BooksInformationImpl implements BooksInformationService {
     public int insertSelective(BooksInformation record)
     {
         Date date = new Date();
-        String[] images = record.getImage().split("\\\\");
-        record.setImage(images[images.length-1]);
+        if(record.getImage()!=null && !"".equals(record.getImage())){
+            String[] images = record.getImage().split("\\\\");
+            record.setImage(images[images.length-1]);
+        }
         record.setGmtCreate(date);
         record.setGmtModified(date);
         return booksInformationMapper.insertSelective(record);

@@ -12,6 +12,26 @@ public class Conditions {
 
     private Integer classId;
 
+    private String publishers;
+
+    private String author;
+
+    public String getPublishers() {
+        return publishers;
+    }
+
+    public void setPublishers(String publishers) {
+        this.publishers = publishers;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
     public String getName() {
         return name;
     }

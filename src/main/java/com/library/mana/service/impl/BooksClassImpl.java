@@ -36,10 +36,7 @@ public class BooksClassImpl implements BooksClassService {
         if(count<1)
             return null;
         PageBean pageBean = new PageBean(record.getPage(),count,record.getLimit(),record);
-        List<BooksClass> booksClassList = booksClassMapper.selectList(record);
-        if(booksClassList.size()<1 || booksClassList==null)
-            return null;
-        pageBean.setList(booksClassList);
+        pageBean.setList(booksClassMapper.selectList(record));
         return pageBean;
     }
 

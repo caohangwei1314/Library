@@ -30,13 +30,10 @@ public class UsersImpl implements UsersService {
 
     public PageBean selectList(Conditions record){
         int count = usersMapper.count(record);
-        if(count<0)
+        if(count<1)
             return null;
         PageBean pageBean = new PageBean(record.getPage(),count,record.getLimit(),record);
-        List<Users> usersList = usersMapper.selectList(record);
-        if(usersList.size()<1 || usersList==null)
-            return null;
-        pageBean.setList(usersList);
+        pageBean.setList(usersMapper.selectList(record));
         return pageBean;
     }
 

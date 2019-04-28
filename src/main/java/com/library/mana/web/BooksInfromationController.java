@@ -6,6 +6,7 @@ import com.library.mana.service.BooksInformationService;
 import com.library.mana.utils.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Map;
 
@@ -56,6 +57,17 @@ public class BooksInfromationController extends BaseController{
     public Map<String,Object> delete(@RequestParam("id") Integer id)
     {
         setMsg(booksInformationService.deleteByPrimaryKey(id),null,null);
+        return msg;
+    }
+
+    @RequestMapping(value = "/temp",method = RequestMethod.POST)
+    public Map<String,Object> upload(@RequestBody MultipartFile file)
+    {
+        String url = booksInformationService.uploadTemp(file);
+        if(url!=null)
+            setMsg(1,null,url);
+        else
+            setMsg(0,"上传失败！",null);
         return msg;
     }
 }

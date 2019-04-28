@@ -44,4 +44,11 @@ public class BooksInfromationController extends BaseController{
             setMsg(0,"暂无信息！",null);
         return msg;
     }
+
+    @RequestMapping(method = RequestMethod.PUT)
+    public Map<String,Object> update(@RequestBody BooksInformation record)
+    {
+        setMsg(booksInformationService.updateByPrimaryKeySelective(record),null,null);
+        return msg;
+    }
 }

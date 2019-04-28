@@ -41,4 +41,10 @@ public class BooksInformationImpl implements BooksInformationService {
         pageBean.setList(booksInformationMapper.selectList(record));
         return pageBean;
     }
+
+    public int updateByPrimaryKeySelective(BooksInformation record)
+    {
+        record.setGmtModified(new Date());
+        return booksInformationMapper.updateByPrimaryKeySelective(record);
+    }
 }

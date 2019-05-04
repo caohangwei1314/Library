@@ -52,6 +52,8 @@ public class BooksInformation implements Serializable {
      */
     private Date gmtModified;
 
+    private String introduce;
+
     private static final long serialVersionUID = 1L;
 
     public Integer getPkId() {
@@ -124,6 +126,14 @@ public class BooksInformation implements Serializable {
 
     public void setGmtModified(Date gmtModified) {
         this.gmtModified = gmtModified;
+    }
+
+    public String getIntroduce() {
+        return introduce;
+    }
+
+    public void setIntroduce(String introduce) {
+        this.introduce = introduce;
     }
 
     @Override

@@ -11,6 +11,7 @@
     <result column="num" jdbcType="INTEGER" property="num" />
     <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
     <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+    <result column="introduce" jdbcType="VARCHAR" property="introduce"/>
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -71,7 +72,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    pk_id, class_id, image, name, publishers, author, num, gmt_create, gmt_modified
+    pk_id, class_id, image, name, publishers, author, num, gmt_create, gmt_modified,introduce
   </sql>
   <select id="selectByExample" parameterType="com.library.mana.domain.BooksInformationExample" resultMap="BaseResultMap">
     select
@@ -151,6 +152,9 @@
       <if test="gmtModified != null">
         gmt_modified,
       </if>
+      <if test="introduce != null">
+        introduce,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="pkId != null">
@@ -179,6 +183,9 @@
       </if>
       <if test="gmtModified != null">
         #{gmtModified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="introduce != null">
+        #{introduce,jdbcType=VARCHAR}
       </if>
     </trim>
   </insert>
@@ -264,6 +271,9 @@
       </if>
       <if test="gmtModified != null">
         gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="introduce">
+        introduce = #{introduce,jdbcType=VARCHAR},
       </if>
     </set>
     where pk_id = #{pkId,jdbcType=INTEGER}

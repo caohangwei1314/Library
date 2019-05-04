@@ -21,7 +21,7 @@ public class BooksInformationImpl implements BooksInformationService {
     @Autowired
     private BooksInformationMapper booksInformationMapper;
 
-    private static final String IP = "192.168.10.112:8080";
+    private static final String IP = "localhost:8080";
 
     private static final String PATH = "E:\\网站设计\\images\\";
 

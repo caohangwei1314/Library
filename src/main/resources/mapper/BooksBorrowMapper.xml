@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.library.mana.dao.BooksBorrowMapper">
+  <resultMap id="BaseResultMap" type="com.library.mana.domain.BooksBorrow">
+    <id column="pk_id" jdbcType="INTEGER" property="pkId" />
+    <result column="books_id" jdbcType="INTEGER" property="booksId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_return" jdbcType="TIMESTAMP" property="gmtReturn" />
+    <result column="fine" jdbcType="DECIMAL" property="fine" />
+    <result column="actual_return" jdbcType="TIMESTAMP" property="actualReturn" />
+    <result column="is_return" jdbcType="INTEGER" property="isReturn" />
+    <result column="name" jdbcType="VARCHAR" property="name"></result>
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    pk_id, books_id, user_id, gmt_create, gmt_return, fine, actual_return, is_return
+  </sql>
+  <select id="selectByExample" parameterType="com.library.mana.domain.BooksBorrowExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from books_borrow
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from books_borrow
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from books_borrow
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.library.mana.domain.BooksBorrowExample">
+    delete from books_borrow
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.library.mana.domain.BooksBorrow">
+    insert into books_borrow (pk_id, books_id, user_id, 
+      gmt_create, gmt_return, fine, 
+      actual_return, is_return)
+    values (#{pkId,jdbcType=INTEGER}, #{booksId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, 
+      #{gmtCreate,jdbcType=TIMESTAMP}, #{gmtReturn,jdbcType=TIMESTAMP}, #{fine,jdbcType=DECIMAL}, 
+      #{actualReturn,jdbcType=TIMESTAMP}, #{isReturn,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.library.mana.domain.BooksBorrow">
+    insert into books_borrow
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        pk_id,
+      </if>
+      <if test="booksId != null">
+        books_id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create,
+      </if>
+      <if test="gmtReturn != null">
+        gmt_return,
+      </if>
+      <if test="fine != null">
+        fine,
+      </if>
+      <if test="actualReturn != null">
+        actual_return,
+      </if>
+      <if test="isReturn != null">
+        is_return,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="pkId != null">
+        #{pkId,jdbcType=INTEGER},
+      </if>
+      <if test="booksId != null">
+        #{booksId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="gmtCreate != null">
+        #{gmtCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmtReturn != null">
+        #{gmtReturn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="fine != null">
+        #{fine,jdbcType=DECIMAL},
+      </if>
+      <if test="actualReturn != null">
+        #{actualReturn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isReturn != null">
+        #{isReturn,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.library.mana.domain.BooksBorrowExample" resultType="java.lang.Long">
+    select count(*) from books_borrow
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update books_borrow
+    <set>
+      <if test="record.pkId != null">
+        pk_id = #{record.pkId,jdbcType=INTEGER},
+      </if>
+      <if test="record.booksId != null">
+        books_id = #{record.booksId,jdbcType=INTEGER},
+      </if>
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
+      </if>
+      <if test="record.gmtCreate != null">
+        gmt_create = #{record.gmtCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.gmtReturn != null">
+        gmt_return = #{record.gmtReturn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.fine != null">
+        fine = #{record.fine,jdbcType=DECIMAL},
+      </if>
+      <if test="record.actualReturn != null">
+        actual_return = #{record.actualReturn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.isReturn != null">
+        is_return = #{record.isReturn,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update books_borrow
+    set pk_id = #{record.pkId,jdbcType=INTEGER},
+      books_id = #{record.booksId,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
+      gmt_create = #{record.gmtCreate,jdbcType=TIMESTAMP},
+      gmt_return = #{record.gmtReturn,jdbcType=TIMESTAMP},
+      fine = #{record.fine,jdbcType=DECIMAL},
+      actual_return = #{record.actualReturn,jdbcType=TIMESTAMP},
+      is_return = #{record.isReturn,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.library.mana.domain.BooksBorrow">
+    update books_borrow
+    <set>
+      <if test="booksId != null">
+        books_id = #{booksId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmtReturn != null">
+        gmt_return = #{gmtReturn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="fine != null">
+        fine = #{fine,jdbcType=DECIMAL},
+      </if>
+      <if test="actualReturn != null">
+        actual_return = #{actualReturn,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isReturn != null">
+        is_return = #{isReturn,jdbcType=INTEGER},
+      </if>
+    </set>
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.library.mana.domain.BooksBorrow">
+    update books_borrow
+    set books_id = #{booksId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+      gmt_return = #{gmtReturn,jdbcType=TIMESTAMP},
+      fine = #{fine,jdbcType=DECIMAL},
+      actual_return = #{actualReturn,jdbcType=TIMESTAMP},
+      is_return = #{isReturn,jdbcType=INTEGER}
+    where pk_id = #{pkId,jdbcType=INTEGER}
+  </update>
+  <select id="count" parameterType="com.library.mana.domain.Conditions" resultType="java.lang.Integer">
+    select count(*)
+    from books_borrow
+    where 1=1
+    <if test="userId != null">
+      and user_id = #{userId,jdbcType=INTEGER}
+    </if>
+  </select>
+  <select id="selectList" parameterType="com.library.mana.domain.Conditions" resultMap="BaseResultMap">
+    select a.*,c.name
+    from
+    (select *
+    from books_borrow
+    where 1=1
+    <if test="userId != null">
+      and user_id = #{userId,jdbcType=INTEGER}
+    </if>
+    <if test="isReturn != null">
+      and is_return = #{isReturn,jdbcType=INTEGER}
+    </if>) as a
+    inner join (select pk_id,info_id from books) as b on a.books_id = b.pk_id
+    inner join (select pk_id,name from books_information) as c on b.info_id = c.pk_id
+    order by gmt_return desc
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset},${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+</mapper>

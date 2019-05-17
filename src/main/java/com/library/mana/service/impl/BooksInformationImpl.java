@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.awt.print.Book;
 import java.io.*;
 import java.util.Date;
 import java.util.List;
@@ -21,7 +20,7 @@ public class BooksInformationImpl implements BooksInformationService {
     @Autowired
     private BooksInformationMapper booksInformationMapper;
 
-    private static final String IP = "localhost:8080";
+    private static final String IP = "192.168.10.103:8080";
 
     private static final String PATH = "E:\\网站设计\\images\\";
 

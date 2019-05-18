@@ -1,5 +1,6 @@
 package com.library.mana.service.impl;
 
+import com.library.mana.dao.AuthorityMapper;
 import com.library.mana.dao.UsersMapper;
 import com.library.mana.domain.Conditions;
 import com.library.mana.domain.Users;
@@ -18,14 +19,21 @@ public class UsersImpl implements UsersService {
     @Autowired
     private UsersMapper usersMapper;
 
+    @Autowired
+    private AuthorityMapper authorityMapper;
+
     public Users selectByUniqueId(String uniqueId)
     {
-        return usersMapper.selectByUniqueId(uniqueId);
+        Users users = usersMapper.selectByUniqueId(uniqueId);
+        users.setAuthority(authorityMapper.selectByClassId(users.getClassId()));
+        return users;
     }
 
     public Users selectByPrimaryKey(Integer pkId)
     {
-        return usersMapper.selectByPrimaryKey(pkId);
+        Users users = usersMapper.selectByPrimaryKey(pkId);
+        users.setAuthority(authorityMapper.selectByClassId(users.getClassId()));
+        return users;
     }
 
     public PageBean selectList(Conditions record){
@@ -33,7 +41,10 @@ public class UsersImpl implements UsersService {
         if(count<1)
             return null;
         PageBean pageBean = new PageBean(record.getPage(),count,record.getLimit(),record);
-        pageBean.setList(usersMapper.selectList(record));
+        List<Users> usersList = usersMapper.selectList(record);
+        for(Users users : usersList)
+            users.setAuthority(authorityMapper.selectByClassId(users.getClassId()));
+        pageBean.setList(usersList);
         return pageBean;
     }
 

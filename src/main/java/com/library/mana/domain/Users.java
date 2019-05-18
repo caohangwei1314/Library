@@ -27,6 +27,16 @@ public class Users implements Serializable {
 
     private Date gmtModified;
 
+    private Authority authority;
+
+    public Authority getAuthority() {
+        return authority;
+    }
+
+    public void setAuthority(Authority authority) {
+        this.authority = authority;
+    }
+
     private static final long serialVersionUID = 1L;
 
     public Integer getPkId() {

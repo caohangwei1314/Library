@@ -206,4 +206,20 @@
     from authority
     where pk_id = #{classId,jdbcType=INTEGER}
   </select>
+  <select id="count" parameterType="com.library.mana.domain.Conditions" resultType="java.lang.Integer">
+    select count(*)
+    from authority
+  </select>
+  <select id="selectList" parameterType="com.library.mana.domain.Conditions" resultMap="BaseResultMap">
+    select *
+    from authority
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset},${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
 </mapper>

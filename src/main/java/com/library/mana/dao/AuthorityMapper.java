@@ -4,6 +4,7 @@ import com.library.mana.domain.Authority;
 import com.library.mana.domain.AuthorityExample;
 import java.util.List;
 
+import com.library.mana.domain.Conditions;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -35,4 +36,8 @@ public interface AuthorityMapper {
     int updateByPrimaryKey(Authority record);
 
     Authority selectByClassId(@Param("classId") Integer classId);
+
+    int count(Conditions record);
+
+    List<Authority> selectList(Conditions record);
 }

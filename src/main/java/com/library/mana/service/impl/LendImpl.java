@@ -58,9 +58,6 @@ public class LendImpl implements LendService {
 
     @Override
     public PageBean selectList(Conditions record){
-        Users users = usersMapper.selectByPrimaryKey(record.getUserId());
-        if(users.getClassId()==0)
-            record.setUserId(null);
         int count = booksBorrowMapper.count(record);
         if(count<1)
             return null;

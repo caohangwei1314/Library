@@ -40,11 +40,14 @@ public class LendController extends BaseController{
         return msg;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "/record",method = RequestMethod.POST)
     public Map<String,Object> selectList(@RequestBody Conditions record,
                                          HttpServletRequest request)
     {
-        record.setUserId(Integer.valueOf(request.getAttribute("userId").toString()));
+        if(record.getUserId()==null)
+            record.setUserId(Integer.valueOf(request.getAttribute("userId").toString()));
+        if(record.getUserId()==0)
+            record.setUserId(null);
         PageBean pageBean = lendService.selectList(record);
         if(pageBean!=null)
             setMsg(1,null,pageBean);

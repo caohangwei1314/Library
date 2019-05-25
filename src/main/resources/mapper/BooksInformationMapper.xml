@@ -12,6 +12,7 @@
     <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
     <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
     <result column="introduce" jdbcType="VARCHAR" property="introduce"/>
+    <result column="count" jdbcType="INTEGER" property="count"/>
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -308,7 +309,9 @@
     </if>
   </select>
   <select id="selectList" parameterType="com.library.mana.domain.Conditions" resultMap="BaseResultMap">
-    select *
+    select a.*,IFNULL(b.count,0) as count
+    from
+    (select *
     from books_information
     where 1=1
     <if test="name != null">
@@ -322,7 +325,9 @@
     </if>
     <if test="classId != null">
       and class_id = #{classId,jdbcType=INTEGER}
-    </if>
+    </if>) as a
+    left join (select info_id,count(pk_id) as count from books where status=0 group by info_id) as b
+    on a.pk_id = b.info_id
     order by gmt_create desc
     <if test="limit != null">
       <if test="offset != null">

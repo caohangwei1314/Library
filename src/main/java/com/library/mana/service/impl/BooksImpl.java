@@ -1,7 +1,9 @@
 package com.library.mana.service.impl;
 
+import com.library.mana.dao.BooksInformationMapper;
 import com.library.mana.dao.BooksMapper;
 import com.library.mana.domain.Books;
+import com.library.mana.domain.BooksInformation;
 import com.library.mana.domain.Conditions;
 import com.library.mana.service.BooksService;
 import com.library.mana.utils.PageBean;
@@ -16,12 +18,20 @@ public class BooksImpl implements BooksService {
     @Autowired
     private BooksMapper booksMapper;
 
+    @Autowired
+    private BooksInformationMapper booksInformationMapper;
+
     public int insertSelective(Books record)
     {
         Date date = new Date();
         record.setGmtCreate(date);
         record.setGmtModified(date);
-        return booksMapper.insertSelective(record);
+        if(booksMapper.insertSelective(record)>0){
+            BooksInformation booksInformation = booksInformationMapper.selectByPrimaryKey(record.getInfoId());
+            booksInformation.setNum(booksInformation.getNum()+1);
+            return booksInformationMapper.updateByPrimaryKeySelective(booksInformation);
+        }
+        return 0;
     }
 
     public Books selectByPrimaryKey(Integer pkId)

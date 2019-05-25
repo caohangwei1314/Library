@@ -54,6 +54,16 @@ public class BooksInformation implements Serializable {
 
     private String introduce;
 
+    private Integer count;
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
     private static final long serialVersionUID = 1L;
 
     public Integer getPkId() {

@@ -22,6 +22,16 @@ public class Conditions {
 
     private Integer isReturn;
 
+    private Integer pkId;
+
+    public Integer getPkId() {
+        return pkId;
+    }
+
+    public void setPkId(Integer pkId) {
+        this.pkId = pkId;
+    }
+
     public Integer getIsReturn() {
         return isReturn;
     }

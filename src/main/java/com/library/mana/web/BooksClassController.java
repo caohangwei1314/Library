@@ -23,7 +23,7 @@ public class BooksClassController extends BaseController{
         return msg;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "/detail",method = RequestMethod.GET)
     public Map<String,Object> select(@RequestParam("id") Integer id)
     {
         BooksClass booksClass = booksClassService.selectByPrimaryKey(id);

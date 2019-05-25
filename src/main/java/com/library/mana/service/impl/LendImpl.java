@@ -1,12 +1,7 @@
 package com.library.mana.service.impl;
 
-import com.library.mana.dao.AuthorityMapper;
-import com.library.mana.dao.BooksBorrowMapper;
-import com.library.mana.dao.UsersMapper;
-import com.library.mana.domain.Authority;
-import com.library.mana.domain.BooksBorrow;
-import com.library.mana.domain.Conditions;
-import com.library.mana.domain.Users;
+import com.library.mana.dao.*;
+import com.library.mana.domain.*;
 import com.library.mana.service.LendService;
 import com.library.mana.utils.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +11,9 @@ import java.util.Date;
 
 @Service
 public class LendImpl implements LendService {
+
+    @Autowired
+    private BooksMapper booksMapper;
 
     @Autowired
     private BooksBorrowMapper booksBorrowMapper;
@@ -53,7 +51,13 @@ public class LendImpl implements LendService {
     public int updateByPrimaryKeySelective(BooksBorrow record){
         if(record.getIsReturn()==1)
             record.setActualReturn(new Date());
-        return booksBorrowMapper.updateByPrimaryKeySelective(record);
+        if(booksBorrowMapper.updateByPrimaryKeySelective(record)>0){
+            Books books = new Books();
+            books.setPkId(record.getBooksId());
+            books.setStatus(0);
+            return booksMapper.updateByPrimaryKeySelective(books);
+        }
+        return 0;
     }
 
     @Override

@@ -303,6 +303,9 @@
     <if test="author != null">
       and author like concat('%',author,'%')
     </if>
+    <if test="classId != null">
+      and class_id = #{classId,jdbcType=INTEGER}
+    </if>
   </select>
   <select id="selectList" parameterType="com.library.mana.domain.Conditions" resultMap="BaseResultMap">
     select *
@@ -316,6 +319,9 @@
     </if>
     <if test="author != null">
       and author like concat('%',#{author,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="classId != null">
+      and class_id = #{classId,jdbcType=INTEGER}
     </if>
     order by gmt_create desc
     <if test="limit != null">

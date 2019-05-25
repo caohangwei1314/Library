@@ -426,3 +426,20 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
 
+2019-05-25 18:16:30.971  INFO 13133 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on caohangwei-CW65S with PID 13133 (/home/caohangwei/Downloads/Library/target/classes started by caohangwei in /home/caohangwei/Downloads/Library)
+2019-05-25 18:16:30.977  INFO 13133 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-05-25 18:16:33.361  INFO 13133 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-25 18:16:33.400  INFO 13133 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-25 18:16:33.401  INFO 13133 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-25 18:16:33.493  INFO 13133 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-25 18:16:33.493  INFO 13133 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2452 ms
+2019-05-25 18:16:34.563  INFO 13133 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-25 18:16:34.852  INFO 13133 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-25 18:16:34.855  INFO 13133 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 4.942 seconds (JVM running for 6.192)
+2019-05-25 18:19:16.003  INFO 13133 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-25 18:19:16.003  INFO 13133 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-25 18:19:16.009  INFO 13133 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-25 18:20:40.390  WARN 13133 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-05-25 18:20:40.391  INFO 13133 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-25 18:20:40.393  WARN 13133 --- [http-nio-8080-exec-4] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-05-25 18:20:41.029  INFO 13133 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

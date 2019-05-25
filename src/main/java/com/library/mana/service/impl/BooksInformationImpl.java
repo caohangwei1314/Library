@@ -1,5 +1,6 @@
 package com.library.mana.service.impl;
 
+import com.library.mana.dao.BooksBorrowMapper;
 import com.library.mana.dao.BooksInformationMapper;
 import com.library.mana.dao.BooksMapper;
 import com.library.mana.domain.Books;
@@ -24,6 +25,9 @@ public class BooksInformationImpl implements BooksInformationService {
 
     @Autowired
     private BooksMapper booksMapper;
+
+    @Autowired
+    private BooksBorrowMapper booksBorrowMapper;
 
     private static final String IP = "192.168.10.112:8080";
 

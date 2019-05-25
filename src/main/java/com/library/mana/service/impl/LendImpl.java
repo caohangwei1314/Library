@@ -26,6 +26,17 @@ public class LendImpl implements LendService {
 
     @Override
     public int insertSelective(BooksBorrow record){
+        Books bookss = booksMapper.selectByPrimaryKey(record.getBooksId());
+        Conditions rec = new Conditions();
+        rec.setUserId(record.getUserId());
+        rec.setPkId(bookss.getInfoId());
+        if(booksBorrowMapper.judge(rec)>0)
+            return 0;
+        Conditions re = new Conditions();
+        re.setStatus(0);
+        re.setPkId(record.getBooksId());
+        if(booksMapper.count(re)<1)
+            return 0;
         Users users = usersMapper.selectByPrimaryKey(record.getUserId());
         Authority authority = authorityMapper.selectByClassId(users.getClassId());
         Conditions conditions = new Conditions();
@@ -39,7 +50,13 @@ public class LendImpl implements LendService {
         time+=1000l*60l*60l*24l*a;
         Date date = new Date(time);
         record.setGmtReturn(date);
-        return booksBorrowMapper.insertSelective(record);
+        if(booksBorrowMapper.insertSelective(record)>0){
+            Books books =new Books();
+            books.setPkId(record.getBooksId());
+            books.setStatus(1);
+            return booksMapper.updateByPrimaryKeySelective(books);
+        }
+        return 0;
     }
 
     @Override

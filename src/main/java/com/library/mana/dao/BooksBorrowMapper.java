@@ -37,4 +37,6 @@ public interface BooksBorrowMapper {
     int count(Conditions record);
 
     List<BooksBorrow> selectList(Conditions record);
+
+    int judge(Conditions record);
 }

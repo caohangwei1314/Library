@@ -21,7 +21,7 @@ public class LendController extends BaseController{
     public Map<String,Object> insert(@RequestBody BooksBorrow record,HttpServletRequest request)
     {
         if(record.getUserId()==null)
-            record.setUserId(Integer.valueOf(request.getAttribute("userId").toString()));
+            record.setUserId(Integer.parseInt(request.getAttribute("userId").toString()));
         setMsg(lendService.insertSelective(record),null,null);
         return msg;
     }

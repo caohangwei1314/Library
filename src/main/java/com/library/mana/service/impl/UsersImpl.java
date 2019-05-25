@@ -25,6 +25,8 @@ public class UsersImpl implements UsersService {
     public Users selectByUniqueId(String uniqueId)
     {
         Users users = usersMapper.selectByUniqueId(uniqueId);
+        if(users==null)
+            return null;
         users.setAuthority(authorityMapper.selectByClassId(users.getClassId()));
         return users;
     }

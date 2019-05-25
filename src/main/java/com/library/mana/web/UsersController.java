@@ -23,6 +23,10 @@ public class UsersController extends BaseController{
     public Map<String,Object> login(@RequestBody Users users)
     {
         Users users1 = usersService.selectByUniqueId(users.getUniqueId());
+        if(users1==null){
+            setMsg(0,"该账号未注册",null);
+            return msg;
+        }
         if(Sha2Util.SHA256(users.getPassword()).equals(users1.getPassword())){
             JwtUtil jwtUtil =new JwtUtil();
             try {

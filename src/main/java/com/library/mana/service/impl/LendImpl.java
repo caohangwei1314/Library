@@ -66,4 +66,14 @@ public class LendImpl implements LendService {
         return pageBean;
     }
 
+    @Override
+    public int relend(BooksBorrow record){
+        BooksBorrow booksBorrow = booksBorrowMapper.selectByPrimaryKey(record.getPkId());
+        if(booksBorrow.getIsReturn()!=0)
+            return 0;
+        booksBorrow.setIsReturn(2);
+        booksBorrow.setGmtReturn(new Date(booksBorrow.getGmtReturn().getTime()+1000l*60l*60l*24l*30l));
+        return booksBorrowMapper.updateByPrimaryKeySelective(booksBorrow);
+    }
+
 }

@@ -13,4 +13,6 @@ public interface LendService {
     int updateByPrimaryKeySelective(BooksBorrow record);
 
     PageBean selectList(Conditions record);
+
+    int relend(BooksBorrow record);
 }

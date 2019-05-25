@@ -55,4 +55,12 @@ public class LendController extends BaseController{
             setMsg(0,"暂无借阅信息",null);
         return msg;
     }
+
+    @RequestMapping(value = "/relend",method = RequestMethod.POST)
+    public Map<String,Object> relend(@RequestBody BooksBorrow record,HttpServletRequest request)
+    {
+        record.setUserId(Integer.parseInt(request.getAttribute("userId").toString()));
+        setMsg(lendService.relend(record),null,null);
+        return msg;
+    }
 }

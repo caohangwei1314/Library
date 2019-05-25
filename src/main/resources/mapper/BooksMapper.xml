@@ -237,6 +237,9 @@
     select count(*)
     from books
     where 1=1
+    <if test="infoId != null">
+      and info_id = #{infoId,jdbcType=INTEGER}
+    </if>
     <if test="status != null">
       and status = #{status,jdbcType=VARCHAR}
     </if>
@@ -248,6 +251,9 @@
     select *
     from books
     where 1=1
+    <if test="infoId != null">
+      and info_id = #{infoId,jdbcType=INTEGER}
+    </if>
     <if test="pkId != null">
       and pk_id = #{pkId,jdbcType=INTEGER}
     </if>

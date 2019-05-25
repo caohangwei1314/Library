@@ -1,6 +1,8 @@
 package com.library.mana.service.impl;
 
 import com.library.mana.dao.BooksInformationMapper;
+import com.library.mana.dao.BooksMapper;
+import com.library.mana.domain.Books;
 import com.library.mana.domain.BooksInformation;
 import com.library.mana.domain.Conditions;
 import com.library.mana.service.BooksInformationService;
@@ -19,6 +21,9 @@ public class BooksInformationImpl implements BooksInformationService {
 
     @Autowired
     private BooksInformationMapper booksInformationMapper;
+
+    @Autowired
+    private BooksMapper booksMapper;
 
     private static final String IP = "192.168.10.112:8080";
 
@@ -41,6 +46,10 @@ public class BooksInformationImpl implements BooksInformationService {
         BooksInformation booksInformation =booksInformationMapper.selectByPrimaryKey(id);
         if(booksInformation.getImage()!=null && !"".equals(booksInformation))
             booksInformation.setImage(getUrl(booksInformation.getImage()));
+        Conditions record = new Conditions();
+        record.setStatus(1);
+        record.setInfoId(booksInformation.getPkId());
+        booksInformation.setCount(booksMapper.count(record));
         return booksInformation;
     }
 

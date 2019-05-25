@@ -24,6 +24,16 @@ public class Conditions {
 
     private Integer pkId;
 
+    private Integer infoId;
+
+    public Integer getInfoId() {
+        return infoId;
+    }
+
+    public void setInfoId(Integer infoId) {
+        this.infoId = infoId;
+    }
+
     public Integer getPkId() {
         return pkId;
     }

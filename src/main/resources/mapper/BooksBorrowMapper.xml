@@ -301,7 +301,7 @@
     from(select pk_id from books_information where pk_id=#{pkId,jdbcType=INTEGER}) as a
     right join (select info_id,pk_id from books where status=1) as b
     on a.pk_id = b.info_id
-    inner join (select books_id from books_borrow where user_id=#{userId,jdbcType=INTEGER} and is_return=0 or is_return=2) as c
+    inner join (select books_id from books_borrow where user_id=#{userId,jdbcType=INTEGER} and is_return!=1) as c
     on b.pk_id=c.books_id
   </select>
 </mapper>

@@ -31,7 +31,9 @@ public class LendImpl implements LendService {
         rec.setUserId(record.getUserId());
         rec.setPkId(bookss.getInfoId());
         if(booksBorrowMapper.judge(rec)>0)
-            return 0;
+            return 2;
+        if(usersMapper.selectByPrimaryKey(record.getUserId()).getBalance()<0)
+            return 3;
         Conditions re = new Conditions();
         re.setStatus(0);
         re.setPkId(record.getBooksId());

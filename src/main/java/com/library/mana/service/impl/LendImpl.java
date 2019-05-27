@@ -68,11 +68,12 @@ public class LendImpl implements LendService {
 
     @Override
     public int updateByPrimaryKeySelective(BooksBorrow record){
+        BooksBorrow booksBorrow = booksBorrowMapper.selectByPrimaryKey(record.getPkId());
         if(record.getIsReturn()==1)
             record.setActualReturn(new Date());
         if(booksBorrowMapper.updateByPrimaryKeySelective(record)>0){
             Books books = new Books();
-            books.setPkId(record.getBooksId());
+            books.setPkId(booksBorrow.getBooksId());
             books.setStatus(0);
             return booksMapper.updateByPrimaryKeySelective(books);
         }

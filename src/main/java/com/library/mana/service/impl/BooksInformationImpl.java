@@ -29,7 +29,7 @@ public class BooksInformationImpl implements BooksInformationService {
     @Autowired
     private BooksBorrowMapper booksBorrowMapper;
 
-    private static final String IP = "192.168.10.112:8080";
+    private static final String IP = "127.0.0.1:8080";
 
     private static final String PATH = "E:\\网站设计\\images\\";
 

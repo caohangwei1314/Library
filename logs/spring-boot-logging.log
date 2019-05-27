@@ -1,17 +1,22 @@
-2019-05-26 12:02:03.020  INFO 7990 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on caohangwei-CW65S with PID 7990 (/home/caohangwei/Downloads/Library/target/classes started by caohangwei in /home/caohangwei/Downloads/Library)
-2019-05-26 12:02:03.034  INFO 7990 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
-2019-05-26 12:02:07.163  INFO 7990 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-05-26 12:02:07.247  INFO 7990 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-05-26 12:02:07.248  INFO 7990 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-05-26 12:02:07.618  INFO 7990 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-05-26 12:02:07.620  INFO 7990 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4162 ms
-2019-05-26 12:02:09.133  INFO 7990 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-26 12:02:09.958  INFO 7990 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-05-26 12:02:09.965  INFO 7990 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 9.528 seconds (JVM running for 12.731)
-2019-05-26 12:04:18.924  INFO 7990 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-26 12:04:18.939  INFO 7990 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-05-26 12:04:18.997  INFO 7990 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 56 ms
-2019-05-26 12:04:20.734  WARN 7990 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
-2019-05-26 12:04:20.757  INFO 7990 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-05-26 12:04:20.786  WARN 7990 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2019-05-26 12:04:21.555  INFO 7990 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-27 14:15:30.663  INFO 13487 --- [main] com.library.mana.ManaApplication         : Starting ManaApplication on caohangwei-CW65S with PID 13487 (/home/caohangwei/Downloads/Library/target/classes started by caohangwei in /home/caohangwei/Downloads/Library)
+2019-05-27 14:15:30.688  INFO 13487 --- [main] com.library.mana.ManaApplication         : No active profile set, falling back to default profiles: default
+2019-05-27 14:15:33.648  INFO 13487 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-27 14:15:33.665  INFO 13487 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-27 14:15:33.665  INFO 13487 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-27 14:15:33.750  INFO 13487 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-27 14:15:33.750  INFO 13487 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2713 ms
+2019-05-27 14:15:34.668  INFO 13487 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-27 14:15:35.082  INFO 13487 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-27 14:15:35.084  INFO 13487 --- [main] com.library.mana.ManaApplication         : Started ManaApplication in 5.59 seconds (JVM running for 7.089)
+2019-05-27 14:17:16.034  INFO 13487 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-27 14:17:16.034  INFO 13487 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-27 14:17:16.040  INFO 13487 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-27 14:17:16.222  WARN 13487 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-05-27 14:17:16.223  INFO 13487 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-27 14:17:16.224  WARN 13487 --- [http-nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-05-27 14:17:16.716  INFO 13487 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-27 14:20:04.490  INFO 13887 --- [main] com.library.mana.ManaApplicationTests    : Starting ManaApplicationTests on caohangwei-CW65S with PID 13887 (started by caohangwei in /home/caohangwei/Downloads/Library)
+2019-05-27 14:20:04.495  INFO 13887 --- [main] com.library.mana.ManaApplicationTests    : No active profile set, falling back to default profiles: default
+2019-05-27 14:20:07.125  INFO 13887 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-27 14:20:07.540  INFO 13887 --- [main] com.library.mana.ManaApplicationTests    : Started ManaApplicationTests in 3.65 seconds (JVM running for 4.41)
+2019-05-27 14:20:07.985  INFO 13887 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

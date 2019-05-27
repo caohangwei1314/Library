@@ -17,4 +17,6 @@ public interface UsersService {
     int updateByPrimaryKeySelective(Users record);
 
     int deleteByPrimaryKey(Integer pkId);
+
+    int balance(Users users);
 }

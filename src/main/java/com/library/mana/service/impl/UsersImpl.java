@@ -67,4 +67,10 @@ public class UsersImpl implements UsersService {
     public int deleteByPrimaryKey(Integer pkId){
         return usersMapper.deleteByPrimaryKey(pkId);
     }
+
+    public int balance(Users users){
+        Users users1 = usersMapper.selectByPrimaryKey(users.getPkId());
+        users1.setBalance(users1.getBalance()+users.getBalance());
+        return updateByPrimaryKeySelective(users1);
+    }
 }

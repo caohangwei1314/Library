@@ -104,4 +104,11 @@ public class UsersController extends BaseController{
         return msg;
     }
 
+    @RequestMapping(value = "/balance",method = RequestMethod.POST)
+    public Map<String,Object> balance(@RequestBody Users users,HttpServletRequest request){
+        users.setPkId(Integer.parseInt(request.getAttribute("userId").toString()));
+        setMsg(usersService.balance(users),null,null);
+        return msg;
+    }
+
 }

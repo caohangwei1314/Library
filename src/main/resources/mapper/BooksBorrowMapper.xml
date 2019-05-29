@@ -10,7 +10,9 @@
     <result column="fine" jdbcType="DECIMAL" property="fine" />
     <result column="actual_return" jdbcType="TIMESTAMP" property="actualReturn" />
     <result column="is_return" jdbcType="INTEGER" property="isReturn" />
-    <result column="name" jdbcType="VARCHAR" property="name"></result>
+    <result column="name" jdbcType="VARCHAR" property="name"/>
+    <result column="count" jdbcType="INTEGER" property="count"/>
+    <result column="month" jdbcType="VARCHAR" property="month"/>
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -303,5 +305,14 @@
     on a.pk_id = b.info_id
     inner join (select books_id from books_borrow where user_id=#{userId,jdbcType=INTEGER} and is_return!=1) as c
     on b.pk_id=c.books_id
+  </select>
+  <select id="statistic" resultMap="BaseResultMap">
+    select count(pk_id) as count,MONTH(gmt_create) as month
+    from books_borrow
+    WHERE user_id = #{userId,jdbcType=INTEGER}
+    <if test="year != null">
+      and gmt_create like concat('%',#{year,jdbcType=VARCHAR},'%')
+    </if>
+    GROUP BY month
   </select>
 </mapper>

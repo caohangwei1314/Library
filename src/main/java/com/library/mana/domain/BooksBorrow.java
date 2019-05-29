@@ -44,6 +44,36 @@ public class BooksBorrow implements Serializable {
 
     private String name;
 
+    private String month;
+
+    private Integer count;
+
+    private String year;
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
     public String getName() {
         return name;
     }

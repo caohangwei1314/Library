@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class LendImpl implements LendService {
@@ -113,6 +114,11 @@ public class LendImpl implements LendService {
         booksBorrow.setIsReturn(2);
         booksBorrow.setGmtReturn(new Date(booksBorrow.getGmtReturn().getTime()+1000l*60l*60l*24l*30l));
         return booksBorrowMapper.updateByPrimaryKeySelective(booksBorrow);
+    }
+
+    @Override
+    public List<BooksBorrow> statistic(String year, Integer userId){
+        return booksBorrowMapper.statistic(year,userId);
     }
 
 }

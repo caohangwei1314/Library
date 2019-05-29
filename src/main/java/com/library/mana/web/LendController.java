@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -61,6 +62,18 @@ public class LendController extends BaseController{
     {
         record.setUserId(Integer.parseInt(request.getAttribute("userId").toString()));
         setMsg(lendService.relend(record),null,null);
+        return msg;
+    }
+
+    @RequestMapping(value = "/statistic",method = RequestMethod.POST)
+    public Map<String,Object> statistic(@RequestBody BooksBorrow record,HttpServletRequest request)
+    {
+        Integer userId = Integer.parseInt(request.getAttribute("userId").toString());
+        List<BooksBorrow> booksBorrow = lendService.statistic(record.getYear(),userId);
+        if(booksBorrow!=null)
+            setMsg(1,null,booksBorrow);
+        else
+            setMsg(0,null,null);
         return msg;
     }
 }

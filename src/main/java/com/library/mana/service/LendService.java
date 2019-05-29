@@ -4,6 +4,8 @@ import com.library.mana.domain.BooksBorrow;
 import com.library.mana.domain.Conditions;
 import com.library.mana.utils.PageBean;
 
+import java.util.List;
+
 public interface LendService {
 
     int insertSelective(BooksBorrow record);
@@ -15,4 +17,6 @@ public interface LendService {
     PageBean selectList(Conditions record);
 
     int relend(BooksBorrow record);
+
+    List<BooksBorrow> statistic(String year, Integer userId);
 }

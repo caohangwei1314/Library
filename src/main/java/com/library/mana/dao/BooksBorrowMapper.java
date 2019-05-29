@@ -39,4 +39,6 @@ public interface BooksBorrowMapper {
     List<BooksBorrow> selectList(Conditions record);
 
     int judge(Conditions record);
+
+    List<BooksBorrow> statistic(@Param("year") String year,@Param("userId") Integer userId);
 }

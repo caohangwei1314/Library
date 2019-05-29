@@ -60,4 +60,22 @@ public class BooksImpl implements BooksService {
         return booksMapper.deleteByPrimaryKey(pkId);
     }
 
+    public int insertBatch(Books record)
+    {
+        if(record.getCount()<1)
+            return 0;
+        Date date = new Date();
+        record.setGmtCreate(date);
+        record.setGmtModified(date);
+        int flag = 0;
+        for(int i=0;i<record.getCount();i++){
+            flag = booksMapper.insertSelective(record);
+        }
+        if(flag<1)
+            return 0;
+        BooksInformation booksInformation = booksInformationMapper.selectByPrimaryKey(record.getInfoId());
+        booksInformation.setNum(booksInformation.getNum()+record.getCount());
+        return booksInformationMapper.updateByPrimaryKeySelective(booksInformation);
+    }
+
 }

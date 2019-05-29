@@ -61,4 +61,11 @@ public class BooksController extends BaseController{
         return msg;
     }
 
+    @RequestMapping(value = "/batch",method = RequestMethod.POST)
+    public Map<String,Object> batch(@RequestBody Books record)
+    {
+        setMsg(booksService.insertBatch(record),null,null);
+        return msg;
+    }
+
 }

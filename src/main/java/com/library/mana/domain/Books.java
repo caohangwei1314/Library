@@ -37,6 +37,16 @@ public class Books implements Serializable {
      */
     private Date gmtModified;
 
+    private Integer count;
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
     private static final long serialVersionUID = 1L;
 
     public Integer getPkId() {

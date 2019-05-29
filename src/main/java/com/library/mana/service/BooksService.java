@@ -16,4 +16,6 @@ public interface BooksService {
 
     int deleteByPrimaryKey(Integer pkId);
 
+    int insertBatch(Books books);
+
 }
